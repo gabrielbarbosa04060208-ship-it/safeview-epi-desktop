@@ -1,6 +1,6 @@
-# SafeView EPI Desktop V6
+# SafeView EPI Desktop V33
 
-Aplicativo desktop Windows para deteccao de EPIs (capacete e colete) em tempo real via webcam.
+Aplicativo desktop Windows para deteccao de EPIs em tempo real via webcam.
 Funciona 100% offline apos a instalacao.
 
 ## Requisitos
