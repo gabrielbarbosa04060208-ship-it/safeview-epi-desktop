@@ -1,0 +1,6 @@
+node_modules/
+dist-electron/
+apps/safeviewepi/node_modules/
+apps/safeviewepi/dist/
+.claude/
+*.log

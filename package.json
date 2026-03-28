@@ -1,0 +1,39 @@
+{
+  "name": "safeview-epi-desktop",
+  "version": "33.0.0",
+  "main": "electron/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build:app": "cd apps/safeviewepi && npm run build",
+    "build": "npm run build:app && electron-builder",
+    "pack": "electron-builder --dir"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^29.0.0",
+    "electron-builder": "^24.9.1",
+    "cross-env": "^7.0.3"
+  },
+  "build": {
+    "appId": "com.gabrielmadureira.safeviewepi",
+    "productName": "SafeView EPI Desktop",
+    "icon": "electron/icon.ico",
+    "asar": false,
+    "win": {
+      "target": "nsis",
+      "icon": "electron/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    },
+    "directories": {
+      "output": "dist-electron"
+    },
+    "files": [
+      "electron/**/*",
+      "apps/safeviewepi/dist/**/*",
+      "node_modules/**/*"
+    ]
+  }
+}
